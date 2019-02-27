@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import api from "../../services/api";
 import './styles.css';
+import {Link} from 'react-router-dom';
+
 export default class Main extends Component {
 
     state = {
@@ -39,7 +41,7 @@ export default class Main extends Component {
                         <article key={user.id}>
                             <strong>{user.name}</strong>
                             <p>{ user.email }</p>
-                            <a href="">Acessar</a>
+                            <Link to={`/user/${user.id}`}>Acessar</Link>
                         </article>
                     ))
                 }
