@@ -2,6 +2,6 @@ import React from "react";
 
 import './styles.css';
 
-const Header = () => <header id="main-header">Header</header>;
+const Header = () => <header id="main-header">Curso React</header>;
 
 export default Header;
